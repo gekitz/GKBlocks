@@ -7,6 +7,8 @@
 //
 
 #import "GKViewController.h"
+#import "UIAlertView+GKBlockAddition.h"
+#import "UIActionSheet+GKBlockAddition.h"
 
 @interface GKViewController ()
 
@@ -14,16 +16,24 @@
 
 @implementation GKViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)showAlertView:(id)sender {
+
+    GKAlertViewBlock block = ^(UIAlertView *alertView, NSInteger buttonIndex) {
+        NSLog(@"CancelButton Pressed = %d", alertView.cancelButtonIndex == buttonIndex);
+    };
+
+    [[[UIAlertView alloc] initWithTitle:@"Test" message:@"This is a test" block:block cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil] show];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showActionSheet:(id)sender {
+    
+    GKActionSheetBlock block = ^(UIActionSheet *sheet, NSInteger buttonIndex) {
+        NSLog(@"CancelButton Pressed = %d", sheet.cancelButtonIndex == buttonIndex);
+    };
+
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Test" block:block cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [sheet showInView:self.view];
 }
+
 
 @end

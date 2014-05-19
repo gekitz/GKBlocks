@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GKViewController : UIViewController
-
+- (IBAction)showAlertView:(id)sender;
+- (IBAction)showActionSheet:(id)sender;
 @end

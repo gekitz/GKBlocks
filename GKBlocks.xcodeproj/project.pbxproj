@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9935FDE254C341D8810D43 /* UIActionSheet+GKBlockAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B99310449BEE8A0C8A4E327 /* UIActionSheet+GKBlockAddition.m */; };
+		5B993919FEEDAB0DC50212FF /* UIAlertView+GKBlockAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B993A97D46BA9C0F8340434 /* UIAlertView+GKBlockAddition.m */; };
 		C12539A2192A56E600A3A018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12539A1192A56E600A3A018 /* Foundation.framework */; };
 		C12539A4192A56E600A3A018 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12539A3192A56E600A3A018 /* CoreGraphics.framework */; };
 		C12539A6192A56E600A3A018 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12539A5192A56E600A3A018 /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B99310449BEE8A0C8A4E327 /* UIActionSheet+GKBlockAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+GKBlockAddition.m"; sourceTree = "<group>"; };
+		5B993109753623BFF429FFBF /* UIAlertView+GKBlockAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+GKBlockAddition.h"; sourceTree = "<group>"; };
+		5B9933DCDD313C6E5B1123D0 /* UIActionSheet+GKBlockAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+GKBlockAddition.h"; sourceTree = "<group>"; };
+		5B993A97D46BA9C0F8340434 /* UIAlertView+GKBlockAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+GKBlockAddition.m"; sourceTree = "<group>"; };
 		C125399E192A56E600A3A018 /* GKBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12539A1192A56E600A3A018 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C12539A3192A56E600A3A018 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,9 +85,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9939BDA4EF2EADE16C1077 /* UIActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				5B99310449BEE8A0C8A4E327 /* UIActionSheet+GKBlockAddition.m */,
+				5B9933DCDD313C6E5B1123D0 /* UIActionSheet+GKBlockAddition.h */,
+			);
+			path = UIActionSheet;
+			sourceTree = "<group>";
+		};
+		5B993DE69CE2C85AE790E02E /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5B993109753623BFF429FFBF /* UIAlertView+GKBlockAddition.h */,
+				5B993A97D46BA9C0F8340434 /* UIAlertView+GKBlockAddition.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
+		5B993EBF7FBF91C9F458B209 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B9939BDA4EF2EADE16C1077 /* UIActionSheet */,
+				5B993DE69CE2C85AE790E02E /* UIAlertView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C1253995192A56E600A3A018 = {
 			isa = PBXGroup;
 			children = (
+				5B993EBF7FBF91C9F458B209 /* Classes */,
 				C12539A7192A56E600A3A018 /* GKBlocks */,
 				C12539C6192A56E600A3A018 /* GKBlocksTests */,
 				C12539A0192A56E600A3A018 /* Frameworks */,
@@ -253,6 +287,8 @@
 				C12539B2192A56E600A3A018 /* GKAppDelegate.m in Sources */,
 				C12539B8192A56E600A3A018 /* GKViewController.m in Sources */,
 				C12539AE192A56E600A3A018 /* main.m in Sources */,
+				5B993919FEEDAB0DC50212FF /* UIAlertView+GKBlockAddition.m in Sources */,
+				5B9935FDE254C341D8810D43 /* UIActionSheet+GKBlockAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +493,7 @@
 				C12539D2192A56E600A3A018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C12539D3192A56E600A3A018 /* Build configuration list for PBXNativeTarget "GKBlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +502,7 @@
 				C12539D5192A56E600A3A018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

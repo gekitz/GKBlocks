@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "UIActionSheet + UIAlertView with Blocks"
 
   s.description  = <<-DESC
-                   Adds blocks support to UIActionSheet and UIAlertView
+                   Addition for UIActionSheet and UIAlertView to support a block instead of a delegate to check which button was tapped
                    DESC
 
   s.homepage     = "http://github.com/gekitz/GKBlocks"

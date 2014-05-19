@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  subspec "UIActionSheet" do |sp|
+  s.subspec "UIActionSheet" do |sp|
     sp.source_files = "Classes/UIActionSheet"
   end
 
-  subspec "UIAlertView" do |sp|
+  s.subspec "UIAlertView" do |sp|
     sp.source_files = "Classes/UIAlertView"
   end
 end

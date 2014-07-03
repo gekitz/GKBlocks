@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GKBlocks"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "UIActionSheet + UIAlertView with Blocks"
 
   s.description  = <<-DESC
@@ -15,10 +15,12 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/gekitz/GKBlocks.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/gekitz/GKBlocks.git", :tag => "0.0.2" }
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
+
+  s.frameworks = "UIKit"
 
   s.requires_arc = true
 

@@ -3,7 +3,7 @@
 // Copyright (c) 2014 Aurora Apps. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 typedef void(^GKAlertViewBlock)(UIAlertView *alertView, NSInteger buttonIndex);
 @interface UIAlertView (GKBlockAddition)

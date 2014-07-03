@@ -3,7 +3,7 @@
 // Copyright (c) 2014 Aurora Apps. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 typedef void(^GKActionSheetBlock)(UIActionSheet *sheet, NSInteger buttonIndex);
 @interface UIActionSheet (GKBlockAddition)
